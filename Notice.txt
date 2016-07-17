@@ -1,0 +1,22 @@
+
+Changing the Board for Debugging (P&E OpenSDA)
+While pressing the reset button, power the board with the OpenSDA USB port
+----DEBUG-APP_Pemicro_v108.SDA
+copy file from the pack to the BOOTLOADER drive
+
+Changing the Board back to MSD Bootloader (P&E OpenSDA)
+----MSD-FRDM-KL46Z48M_Pemicro_v113.SDA
+Now the board is in MSD mode, and you can copy S19 files to it.
+
+The bootloader expects the file blocks in a given order,
+virus scanner or file manager might interfere with this. 
+In that case, use the DOS cmd shell copy command. 
+The ‘copy’ command always worked for me.
+
+
+http://www.torrentz.eu
+
+
+call dbms_xdb.cfg_update(updateXML(dbms_xdb.cfg_get(), '/xdbconfig/sysconfig/protocolconfig/ftpconfig/ftp-port/text()', 2111))
+
+https://eewiki.net/display/microcontroller/Getting+started+with+Freescale's+Freedom+KL46Z+Development+Board
